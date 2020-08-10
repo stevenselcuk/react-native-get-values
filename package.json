@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-get-values",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read values from your Info.plist (iOS) or values/strings.xml (Android) on your React Native project",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,9 @@
     "react-native"
   ],
   "author": "Steven J. Selcuk",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+"publishConfig": {
+    "registry":"https://npm.pkg.github.com/stevenselcuk"
+},
  "license": "ISC",
   "bugs": {
     "url": "https://github.com/stevenselcuk/react-native-get-values/issues"
