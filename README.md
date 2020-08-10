@@ -79,12 +79,12 @@ and add your keys&values like this
 ```
 
 ```javascript
-import getData from 'react-native-get-values';
+import getValue from 'react-native-get-values';
 
 // ...
 
 const getTheKey = async () => {
-      const YourKeyValue = await getData('YOUR_KEY');
+      const YourKeyValue = await getValue('YOUR_KEY');
       return key
 }
 
