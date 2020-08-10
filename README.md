@@ -1,6 +1,10 @@
 
 # react-native-get-values
 
+## About
+
+Read values from your Info.plist (iOS) or values/strings.xml (Android) on your React Native project
+
 ## Getting started
 
 `$ npm install react-native-get-values --save`
@@ -36,13 +40,47 @@
 
 
 ## Usage
+
+For iOS
+
+As a classic way, open your xcode project and add rows to Info.plist or
+
+Open  `your-RN-project/ios/RNCodeTest/Info.plist` file 
+and add your keys&values like this
+
+```xml
+...
+	<key>YOUR_KEY</key>
+	<string>asnltgfhe7s9ab</string>
+	<key>YOUR_ANOTHER_KEY</key>
+	<string>se7sbans84mvbsya</string>
+...
+</dict>
+</plist>
+
+```
+
+For android
+
+Open `your-RN-project/android/app/src/main/res/values/strings.xml` file
+and add your keys&values like this
+
+```xml
+<resources>
+    <string name="app_name">your-RN-project</string>
+    <string name="YOUR_KEY">asnltgfhe7s9ab</string>
+    <string name="YOUR_ANOTHER_KEY">se7sbans84mvbsya</string>
+</resources>
+
+```
+
 ```javascript
 import RNGetValues from 'react-native-get-values';
 
 // ...
 
 const getTheKey = async () => {
-      const YourKeyValue = await getData('your_key');
+      const YourKeyValue = await getData('YOUR_KEY');
       return key
 }
 
