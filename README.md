@@ -79,7 +79,7 @@ and add your keys&values like this
 ```
 
 ```javascript
-import RNGetValues from 'react-native-get-values';
+import getData from 'react-native-get-values';
 
 // ...
 
