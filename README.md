@@ -7,11 +7,15 @@ Read values from your Info.plist (iOS) or values/strings.xml (Android) on your R
 
 ## Getting started
 
-`$ npm install react-native-get-values --save`
+`yarn add react-native-get-values`
+
+or
+
+`npm install react-native-get-values --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-get-values`
+`react-native link react-native-get-values`
 
 ### Manual installation
 
