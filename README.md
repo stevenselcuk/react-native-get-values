@@ -34,20 +34,19 @@
       compile project(':react-native-get-values')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNGetValues.sln` in `node_modules/react-native-get-values/windows/RNGetValues.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Get.Values.RNGetValues;` to the usings at the top of the file
-  - Add `new RNGetValuesPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
 
 ## Usage
 ```javascript
 import RNGetValues from 'react-native-get-values';
 
-// TODO: What to do with the module?
-RNGetValues;
+// ...
+
+const getTheKey = async () => {
+      const YourKeyValue = await getData('your_key');
+      return key
+}
+
+// ...
+
 ```
   
