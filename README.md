@@ -41,7 +41,7 @@ Read values from your Info.plist (iOS) or values/strings.xml (Android) on your R
 
 ## Usage
 
-For iOS
+### For iOS
 
 As a classic way, open your xcode project and add rows to Info.plist or
 
@@ -60,7 +60,7 @@ and add your keys&values like this
 
 ```
 
-For android
+### For android
 
 Open `your-RN-project/android/app/src/main/res/values/strings.xml` file
 and add your keys&values like this
