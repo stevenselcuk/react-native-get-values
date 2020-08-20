@@ -18,7 +18,7 @@
   ],
   "author": "Steven J. Selcuk",
 "publishConfig": {
-    "registry":"https://npm.pkg.github.com/stevenselcuk"
+    "registry":" https://registry.npmjs.org"
 },
  "license": "ISC",
   "bugs": {
