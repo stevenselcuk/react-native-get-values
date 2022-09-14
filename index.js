@@ -1,10 +1,10 @@
 import { NativeModules, Platform } from "react-native";
 
-const { ConfReader } = NativeModules;
+const { RNGetValues } = NativeModules;
 
 const iOSGetter = (key) => {
   return new Promise(function (resolve, reject) {
-    ConfReader.getKey(key, (error, data) => {
+    RNGetValues.getKey(key, (error, data) => {
       if (error) {
         reject(error);
       } else {
@@ -16,7 +16,7 @@ const iOSGetter = (key) => {
 
 const androidGetter = (key) => {
   return new Promise(function (resolve, reject) {
-    return ConfReader.getKey(
+    return RNGetValues.getKey(
       key,
       (err) => {
         reject(err);
