@@ -1,10 +1,9 @@
 
-package com.reactlibrary;
+package com.reactnativegetvalues;
 
 import android.app.Application;
 import android.content.Context;
 import android.content.res.Resources;
-import com.rncodetest.R;
 import android.util.Log;
 
 import java.lang.ClassNotFoundException;
