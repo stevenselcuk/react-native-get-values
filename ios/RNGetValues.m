@@ -12,7 +12,11 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_METHOD(getKey:(NSString *)key callback:(RCTResponseSenderBlock)callback)
 {
   NSString *value = [[NSBundle mainBundle].infoDictionary objectForKey:key];
-   callback(@[[NSNull null], value]);
+  if(value != nil) {
+    callback(@[[NSNull null], value]);
+  } else {
+    callback(@[@"Config value not found", [NSNull null]]);
+  }
 }
 
 + (BOOL)requiresMainQueueSetup

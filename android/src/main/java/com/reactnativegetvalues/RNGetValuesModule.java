@@ -1,10 +1,9 @@
 
-package com.reactlibrary;
+package com.reactnativegetvalues;
 
 import android.app.Application;
 import android.content.Context;
 import android.content.res.Resources;
-import com.rncodetest.R;
 import android.util.Log;
 
 import java.lang.ClassNotFoundException;
@@ -36,9 +35,9 @@ public class RNGetValuesModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void getKey(String aString, Callback errorCallback, Callback successCallback) {
-    String packageName = reactContext.getPackageName();
-    String token = reactContext.getString(reactContext.getResources().getIdentifier(aString, "string", packageName));
-    try {
+    try {  
+      String packageName = reactContext.getPackageName();
+      String token = reactContext.getString(reactContext.getResources().getIdentifier(aString, "string", packageName));
       successCallback.invoke(token);
     } catch (Exception e) {
      errorCallback.invoke(e.getMessage());
