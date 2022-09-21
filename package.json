@@ -26,6 +26,6 @@
   },
   "homepage": "https://github.com/stevenselcuk/react-native-get-values#readme",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": "*"
   }
 }
