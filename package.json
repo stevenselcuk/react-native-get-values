@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-get-values",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Read values from your Info.plist (iOS) or values/strings.xml (Android) on your React Native project",
   "main": "index.js",
   "scripts": {
